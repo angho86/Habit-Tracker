@@ -1,0 +1,13 @@
+Vizualas
+    Ivedimas
+    isvedimas i html
+    CRUD
+
+Naujo iprocio pridejimas
+    saugojimas objekte
+    objekto struktura:
+        iprocio pavadinimas {
+            sukurimo data
+            time: digit <----   kiek laiko per diena skiriama konkreciam iprociui ugdyti
+
+        }

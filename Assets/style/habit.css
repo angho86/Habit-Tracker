@@ -1,0 +1,28 @@
+
+.habitInfo{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1000px;
+    padding: 1.5rem;
+    background-color: #D9B1A3;
+    border-radius: 10px;
+}
+
+.habitTitle{
+    width: 70%;
+    font-size: 1.5rem;
+}
+
+.habitComplete {
+    background-color: rgb(103, 206, 103);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.habitDelete {
+    background-color: rgb(241, 85, 85);
+    padding: 10px;
+    border-radius: 10px;
+}

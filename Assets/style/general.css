@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F0F0F2;
+    position: relative;
+}
+
+h1{
+    color: #212026;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+
+
+
+
+main{
+    max-width: 1300px;
+    margin: 0 auto;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./Assets/style/general.css">
+    <link rel="stylesheet" href="./Assets/style/navigation.css">
+    <link rel="stylesheet" href="./Assets/style/habit.css">
+    <link rel="stylesheet" href="./Assets/style/modals.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit tracker</title>
+</head>
+<body>
+
+    <h1>Your daily habit tracker</h1>
+
+    <nav>
+        <button onclick="addHabitModal()"><i class="fa-regular fa-square-plus"></i></button>
+
+        <div class="showWeekDays" id="showWeekDays">
+
+            <div class="day">
+                <div class="dayTitle">Mon</div>
+                <div class="dayNumber">28</div>
+            </div>
+
+            <div class="day">
+                <div class="dayTitle">Mon</div>
+                <div class="dayNumber">29</div>
+            </div>
+
+
+            <div class="day">
+                <div class="dayTitle">Mon</div>
+                <div class="dayNumber">30</div>
+            </div>
+
+
+            <div class="day">
+                <div class="dayTitle">Mon</div>
+                <div class="dayNumber">31</div>
+            </div>
+
+        </div>
+    </nav>
+
+    <main>
+        <div class="habitInfo">
+            <div class="habitTitle">Begioti</div>
+            <div class="habitDuration">20min</div>
+            <button class="habitComplete" id="done">Done</button>
+            <button class="habitDelete" id="delete">Delete</button>
+        </div>
+
+        <div class="habitInfo">
+            <div class="habitTitle">Begioti</div>
+            <div class="habitDuration">20min</div>
+            <button class="habitComplete" id="done">Done</button>
+            <button class="habitDelete" id="delete">Delete</button>
+        </div>
+    </main>
+
+    <div class="addHabitModal">
+        <input type="text" id="addHabit">
+        <button id="addHabitBtn">Add</button>
+    </div>
+    
+
+
+
+    <script src="./Assets/js/functions.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
