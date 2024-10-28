@@ -24,11 +24,18 @@ function getFromLocalStorage(){
 
 function addHabitModal(){
     const modalWindow = document.querySelector(".addHabitModal");
-    const habitInput = document.getElementById("addHabit");
-    const addHabitBtn = document.getElementById("addHabitBtn");
 
     modalWindow.style.display = modalWindow.style.display === "flex" ? "none" : "flex";
 
-  
+}
+
+function saveHabit(){
+    const habitInput = document.getElementById("addHabit");
+    const habitDuration = document.getElementById("duration");
+
+    console.log(habitInput.value, habitDuration.value);
+
+    habitInput.value = "";
+    habitDuration.value = "";
 }
 

@@ -13,12 +13,14 @@
     background-color: #A67563;
 }
 
-#addHabit {
+#addHabit,
+#duration {
     padding: 0.5rem;
     font-size: 1rem;
     width: 350px;
     border-radius: 5px;
     border: none;
+    margin-bottom: 5px;
 }
 
 input:focus{
