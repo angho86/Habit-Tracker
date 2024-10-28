@@ -31,3 +31,8 @@ main{
     max-width: 1300px;
     margin: 0 auto;
 }
+
+.current {
+    background-color: #F0F0F2;
+    color: #212026;
+}

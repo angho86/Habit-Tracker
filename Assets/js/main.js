@@ -1,3 +1,5 @@
-const listas = getFromLocalStorage();
 
-generateHTML(listas);
+
+
+daysAndWeeks()
+generateHTML();

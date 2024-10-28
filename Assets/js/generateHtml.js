@@ -1,4 +1,4 @@
-function generateHTML(obj){
+function generateHTML(){
 
     const listHtml = document.getElementById("habitsListHtml");
 

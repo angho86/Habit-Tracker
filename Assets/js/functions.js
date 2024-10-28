@@ -1,4 +1,43 @@
 function daysAndWeeks(){
+    const navigationCalendar = document.getElementById("showWeekDays");
+
+    navigationCalendar.innerHTML = '';
+
+    const today = new Date();
+
+    const currentDay = today.getDay();
+
+    // set days offset
+
+    const offset = -currentDay; // start at monday
+
+    for(let i = offset - 7; i < offset + 7; i++) {
+        const day = new Date(today);
+        day.setDate(today.getDate() + i);
+
+        const dayDiv = document.createElement('div');
+        dayDiv.className = 'day';
+
+        const dayTitle = document.createElement('div');
+        dayTitle.className = 'dayTitle';
+        dayTitle.textContent = day.toLocaleString('en-EN', {weekday: 'short'});
+
+        const dayNumber = document.createElement('div');
+        dayNumber.className = 'dayNumber';
+        dayNumber.textContent = day.getDate();
+
+        dayDiv.appendChild(dayTitle);
+        dayDiv.appendChild(dayNumber);
+
+        // mark current day
+
+        if(day.toDateString() === today.toDateString()){
+            dayDiv.classList.add('current');
+        }
+
+        navigationCalendar.appendChild(dayDiv);
+    }
+
 
 }
 
@@ -61,5 +100,8 @@ function saveHabit(){
     }
     habitInput.value = "";
     habitDuration.value = "";
+
+    generateHTML();
 }
 
+daysAndWeeks();
