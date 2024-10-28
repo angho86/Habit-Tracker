@@ -20,6 +20,10 @@ function saveToLocalStorage(obj){
 
 function getFromLocalStorage(){
 
+    const habits = JSON.parse(localStorage.getItem("habits"));
+
+    return Array.isArray(habits) ? habits : []; 
+
 }
 
 function addHabitModal(){
@@ -41,6 +45,8 @@ function saveHabit(){
         console.log("Duration field is empty!")
     } else {
 
+        /// add logic to create new habit object and save it in localstorage
+
         console.log("Everything is working fine");
     }
 
@@ -49,7 +55,7 @@ function saveHabit(){
 
 
 
-    
+
     habitInput.value = "";
     habitDuration.value = "";
 }
