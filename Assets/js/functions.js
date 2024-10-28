@@ -33,8 +33,23 @@ function saveHabit(){
     const habitInput = document.getElementById("addHabit");
     const habitDuration = document.getElementById("duration");
 
-    console.log(habitInput.value, habitDuration.value);
+    if(!habitInput.value){
+        console.log("Habit name field is empty");
+    }
 
+    if(!habitDuration.value){
+        console.log("Duration field is empty!")
+    } else {
+
+        console.log("Everything is working fine");
+    }
+
+
+
+
+
+
+    
     habitInput.value = "";
     habitDuration.value = "";
 }
