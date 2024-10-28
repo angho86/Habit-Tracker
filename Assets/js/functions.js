@@ -6,17 +6,21 @@ function calendar(){
 
 }
 
-function doneHabit(habit){
+function doneHabit(index){
 
 }
 
-function deleteHabit(habit){
+function deleteHabit(index){
 
 }
 
 function saveToLocalStorage(obj){
 
-    console.log(obj);
+    const habitsList = getFromLocalStorage();
+
+    habitsList.push(obj);
+
+    localStorage.setItem("habits", JSON.stringify(habitsList));
 
 }
 

@@ -1,1 +1,3 @@
-console.log(getFromLocalStorage());
+const listas = getFromLocalStorage();
+
+generateHTML(listas);
