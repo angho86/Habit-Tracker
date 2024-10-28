@@ -16,6 +16,8 @@ function deleteHabit(habit){
 
 function saveToLocalStorage(obj){
 
+    console.log(obj);
+
 }
 
 function getFromLocalStorage(){
@@ -45,17 +47,14 @@ function saveHabit(){
         console.log("Duration field is empty!")
     } else {
 
-        /// add logic to create new habit object and save it in localstorage
+        const obj = {
+            habitName: habitInput.value,
+            duration: habitDuration.value,
+            created: Date.now(),
+        };
 
-        console.log("Everything is working fine");
+        saveToLocalStorage(obj);
     }
-
-
-
-
-
-
-
     habitInput.value = "";
     habitDuration.value = "";
 }
